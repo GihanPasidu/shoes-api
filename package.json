@@ -1,0 +1,13 @@
+{
+    "name": "json-server",
+    "version": "1.0.0",
+    "main": "server.js",
+    "dependencies": {
+      "json-server": "^0.17.0",
+      "concurrently": "^8.0.0"
+    },
+    "scripts": {
+      "start": "concurrently \"json-server --watch db.json --port 5000\" \"json-server --watch user.json --port 5001\""
+    }
+  }
+  
